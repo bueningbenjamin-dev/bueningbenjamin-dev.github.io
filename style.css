@@ -1,0 +1,53 @@
+/* General site fonts and colors */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444444;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
