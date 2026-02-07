@@ -1,17 +1,30 @@
-// Tabletop Fun Facts - JavaScript interactivity
+// Page-specific fun facts
 
-// This function displays a random fun fact when called
-function showFunFact() {
-    const facts = [
-        "The first tabletop role-playing game was Dungeons & Dragons, created in 1974.",
-        "Some board games have been played for over 2,000 years!",
-        "Dice come in many shapes: d4, d6, d8, d10, d12, d20.",
-        "Tabletop games improve problem-solving and social skills."
-    ];
+function showFunFact(page) {
+    let facts = [];
 
-    // Pick a random fact
+    if (page === "home") {
+        facts = [
+            "Tabletop games have existed for thousands of years.",
+            "Board games help improve critical thinking skills.",
+            "Dice games were played as early as ancient Mesopotamia."
+        ];
+    } 
+    else if (page === "monsters") {
+        facts = [
+            "The d20 system is the most common dice system in tabletop RPGs.",
+            "Many monsters in D&D are inspired by real-world myths.",
+            "Dragons appear in folklore across dozens of cultures."
+        ];
+    } 
+    else if (page === "characters") {
+        facts = [
+            "Character backstories help players role-play more effectively.",
+            "Many players base characters on real personality traits.",
+            "Alignment systems help guide character decisions."
+        ];
+    }
+
     const randomFact = facts[Math.floor(Math.random() * facts.length)];
-
-    // Display it in the element with ID 'funFact'
-    document.getElementById('funFact').innerText = randomFact;
+    document.getElementById("funFact").innerText = randomFact;
 }
