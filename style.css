@@ -58,3 +58,15 @@ footer {
   display: block;
   margin: 0 auto;
 }
+button {
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}
