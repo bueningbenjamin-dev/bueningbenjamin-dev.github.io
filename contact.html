@@ -25,9 +25,25 @@
             </ul>
         </nav>
     </header>
-
     <main>
-        <p>Page under construction. Content coming soon!</p>
+        <p>Have a question about monsters, characters, or campaigns? Send a message below!</p>
+
+<form id="contactForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" rows="4" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<p id="confirmationMessage"></p>
+
+<script src="script.js"></script>
     </main>
 
     <footer>
