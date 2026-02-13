@@ -45,3 +45,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+// Hover pop-up feature
+document.addEventListener("mouseover", function (event) {
+
+    if (event.target.classList.contains("hoverInfo")) {
+
+        const popup = document.getElementById("hoverPopup");
+        popup.innerText = event.target.getAttribute("data-info");
+        popup.style.display = "block";
+        popup.style.position = "absolute";
+        popup.style.backgroundColor = "#333";
+        popup.style.color = "white";
+        popup.style.padding = "8px";
+        popup.style.borderRadius = "5px";
+        popup.style.top = event.pageY + "px";
+        popup.style.left = event.pageX + "px";
+    }
+});
+
+document.addEventListener("mouseout", function (event) {
+    if (event.target.classList.contains("hoverInfo")) {
+        document.getElementById("hoverPopup").style.display = "none";
+    }
+});
