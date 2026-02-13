@@ -76,3 +76,14 @@ button:hover {
     max-width: 200px;
     font-size: 14px;
 }
+/* Page fade-in animation */
+body {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
