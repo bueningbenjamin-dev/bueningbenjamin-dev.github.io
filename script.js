@@ -28,3 +28,20 @@ function showFunFact(page) {
     const randomFact = facts[Math.floor(Math.random() * facts.length)];
     document.getElementById("funFact").innerText = randomFact;
 }
+// Contact form confirmation
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("contactForm");
+
+    if (form) {
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            document.getElementById("confirmationMessage").innerText =
+                "Thank you! Your message has been successfully submitted.";
+
+            form.reset();
+        });
+    }
+
+});
